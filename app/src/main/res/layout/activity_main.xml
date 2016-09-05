@@ -8,13 +8,7 @@
     android:fitsSystemWindows="true"
     tools:context="com.travel_diaries.traveldiaries.MainActivity">
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+    <include layout="@layout/fragment_main"/>
 
     <!--<android.support.design.widget.AppBarLayout-->
         <!--android:layout_height="wrap_content"-->
