@@ -1,5 +1,5 @@
-# TravelDiaries-frontend
+##TravelDiaries-frontend
 
-Mobile Application for Travel Diaries
+   Mobile Application for Travel Diaries
 
-Timeline and to-be-done will be added soon.
+ Using firebase cloud Implement register and login activity.

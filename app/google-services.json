@@ -1,48 +1,39 @@
 {
   "project_info": {
-    "project_number": "637471614843",
-    "project_id": "firebase-travel-diaries"
+    "project_number": "991237361007",
+    "firebase_url": "https://traveldairies-a7abd.firebaseio.com",
+    "project_id": "traveldairies-a7abd",
+    "storage_bucket": "traveldairies-a7abd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:637471614843:android:c5c052bba80961c5",
+        "mobilesdk_app_id": "1:991237361007:android:620a6976980a4131",
         "android_client_info": {
-          "package_name": "com.travel_diaries.traveldiaries"
+          "package_name": "com.jsrathore.traveldairies"
         }
       },
       "oauth_client": [
         {
-          "client_id": "637471614843-e3imdnm0vkh8m96uvpoim3m8lbnf4t7i.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.travel_diaries.traveldiaries",
-            "certificate_hash": "F00E1AA33062FD37790B4579B61BE38B8465FB37"
-          }
-        },
-        {
-          "client_id": "637471614843-3etvf5atbrfl2o0ecis2i5clrjei0b5l.apps.googleusercontent.com",
+          "client_id": "991237361007-ldiu4004crr0roarobm9krmas4ivodqm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA6KC7wLmwukPMoxkuxsoViA4w-YiZEEsE"
+          "current_key": "AIzaSyB7STPoSNwAYBGh23BgIuV0bvsxSUPwwu4"
         }
       ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-85246616-1"
-          }
+          "status": 1
         },
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
