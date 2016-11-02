@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,45 +7,87 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
+    android:background="@drawable/home"
     tools:context="com.travel_diaries.traveldiaries.MainActivity">
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/sign_out_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign-out"/>
-
-    <Button
-        android:id="@+id/disconnect_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="disconnect"/>
-
-    <Button
-        android:id="@+id/sign_out_and_disconnect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sign out and disconnect"/>
 
     <TextView
-        android:id="@+id/txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="20sp"
-        android:hint="Status"/>
+        android:text="  TRAVEL \n  DIARIES"
+        android:textSize="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
 
-    <TextView
-        android:id="@+id/txt1"
+
+    <RelativeLayout
+        android:id="@+id/loginSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="20sp"
-        android:hint="ABCD"/>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/border" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-in"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_cluster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_google_signin_btn_text_light"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:textSize="17sp"
+            android:text="Sign-up"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
